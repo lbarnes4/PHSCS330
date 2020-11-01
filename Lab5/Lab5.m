@@ -118,10 +118,12 @@ m=.145;
 theta0=45*pi/180;
 v0=60;
 u0=zeros(4,1);
+
 u0(1)=0; %initial x
 u0(2)=v0*cos(theta0); %initial Vx
 u0(3)=0; %initial y
 u0(4)=v0*sin(theta0); %initial Vy
+
 options=odeset('RelTol',1e-8);
 tstart=0;
 tfinal=20;
